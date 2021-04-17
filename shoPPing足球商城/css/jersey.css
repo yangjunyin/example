@@ -1,0 +1,553 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #000000;
+}
+.banner-a{
+	width: 100%;
+	height: 82px;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.banner-a>img{
+	display: block;
+	float: left;
+}
+.banner-a>ul{
+	width: 600px;
+	height: 82px;
+	float: left;
+	margin-left: 80px;
+}
+.banner-a>ul>li{
+	width: 90px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 82px;
+	margin-left: 10px;
+}
+.banner-a>ul>li>a{
+	color: #AB9274;
+	font-size: 18px;
+}
+.banner-a>ul>li>a:hover{
+	color: #FFFFFF;
+}
+input{
+	width: 152px;
+	height: 50px;
+	resize:none;
+	outline:0;
+	border:0px;
+	border-bottom: 1px solid white;
+	display: block;
+	margin-top: 15px;
+	float: left;
+	margin-left: 50px;
+}
+button{
+	width: 29px;
+	height: 51px;
+	float: left;
+	display: block;
+	outline:0;
+	border:0px;
+	display: block;
+	margin-top: 15px;
+	margin-left: -25px;
+	background: white;
+}
+button>img{
+	width: 28px;
+	float: left;
+}
+button>.xiala{
+	width: 156px;
+	height: 80px;
+	background: white;
+	position: fixed;
+	right: 183px;
+	top: 66px;
+	border-top: 3px solid lightblue;
+	display: none;
+	z-index: 10;
+}
+/* 我的 */
+#mine{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 40px;
+}
+#mine>a{
+	display: block;
+	width: 28px;
+	height: 28px;
+}
+#mine>a>img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 25px;
+}
+/* 购物车 */
+#shop{
+	width: 30px;
+	float: left;
+	margin-left: 40px;
+}
+#shop>img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 25px;
+}
+#shop>.shop{
+	width: 300px;
+	height: 400px;
+	background: white;
+	position: fixed;
+	right: 0px;
+	top: 82px;
+	border-top: 5px solid lightblue;
+	display: none;
+	z-index: 10;
+}
+/* 开始 轮播图*/
+.nav{
+	width: 80%;
+	height: auto;
+	padding-top: 82px;
+	background: #222222;
+	margin: 0 auto;
+}
+.poster-main {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 260px;
+
+}
+.poster-main a, .poster-main img{ 
+	display: block; width: 100%; height: 100%;
+	}
+.poster-main .poster-list {
+  width: 1000px;
+  height: 500px;
+}
+.poster-main .poster-list .poster-item {
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+ 
+}
+
+.poster-main .poster-btn {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  filter: opacity(.5) brightness(1);
+}
+.poster-main .poster-btn:hover{ filter: opacity(1) brightness(2); }
+
+.poster-main .poster-prev-btn {
+  left: 0;
+  background: url(left.png) no-repeat center center;
+}
+
+.poster-main .poster-next-btn {
+  right: 0;
+  background: url(right.png) no-repeat center center;
+}
+/* 导航栏 */
+.bgain{
+	width: 100%;
+	height: auto;
+}
+.bgain>ul{
+	width: 80%;
+	height: 20px;
+	background: #AB9274;
+	padding: 15px 0;
+	margin: 0 auto;
+}
+.bgain>ul>li{
+	float: left;
+	color: white;
+	text-align: center;
+	margin-left: 110px;
+	line-height: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.bgain>ul>li>div{
+	width: 100px;
+	height: 250px;
+	background: #ccc;
+	position: absolute;
+	top: 25px;
+	left: -35px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	border-radius: 10px 10px 10px 10px;
+	display: none;
+	z-index: 10;
+}
+.bgain>ul>li>div>span{
+	display: block;
+	width: 80px;
+	height: 40px;
+	background: rgba(255,255,255,.5);
+	color: black;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+}
+.bgain>ul>li>div>span:hover{
+	background: #707070
+}
+/* 商品 */
+.commodity{
+	width: 80%;
+	height: 1650px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+.commodity>.title{
+	width: 100%;
+	height: 50px;
+}
+.title>ul{
+	width: 40%;
+	height: 100%;
+	margin: 0 auto;
+}
+.title>ul>li{
+	display: block;
+	width: 90px;
+	height: 80%;
+	float: left;
+	background: #FFFFFF;
+	border-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 33px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.title>ul>li>a{
+    text-decoration: none; 
+    position: absolute;
+    font-size: 20px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+	margin-top: 5px;
+	margin-left: -50px;
+}
+.title>ul>li>a::before{
+    content: "";
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    z-index: -1;
+}
+ 
+.title>ul>li>a:hover::before{
+    animation: sun 8s infinite;
+}
+/* 鼠标经过产生的效果 */
+.title>ul>li>a:hover{
+    /* 产生8秒的效果，sun是名称*/
+    animation: sun 8s infinite;
+}
+/* 设置流光 */
+@keyframes sun{
+    100%{
+        /* 以x轴为基准向左移动4个自身大小 */
+        background-position: -400% 0;
+    }
+}
+.page{
+	width: 100%;
+	height: 100%;
+}
+.page>ul>li{
+	display: block;
+	width: 200px;
+	height: 350px;
+	padding: 16px;
+	float: left;
+	border: 1px solid rgba(0,0,0,.5);
+	margin-left: 14px;
+	margin-top: 10px;
+	position: relative;
+}
+.page>ul>li>img{
+	width: 200px;
+	height: 250px;
+	display: block;
+	transition: all 0.5s; 
+}
+.page>ul>li>img:hover{
+	transform: scale(1.13);
+}
+.page>ul>li>p{
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	/* line-height: 30px; */
+	margin-top: 30px;
+	color: #707070;
+	font-size: 1em;
+	line-height: 1;
+}
+.page>ul>li>span{
+	color: #000000;
+	font-weight: 600;
+	margin:10px 0 0 25px;
+	font-size: 14px;
+}
+.page>ul>li>.uzi{
+	width: 20px;
+	position: absolute;
+	right: 45px;
+	bottom: 34px;
+	border-radius: 100px;
+}
+.uzi>img{
+	display: block;
+	width: 20px;
+}
+/* 列表 */
+.lises{
+	width: 80%;
+	height: 50px;
+	background: #fff;
+	margin: 0 auto;
+}
+.lises>ul{
+	display: block;
+	margin-left: 250px;
+	width: 60%;
+
+}
+.lises>ul>li{
+	float: left;
+	width: 30px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,.5);
+	text-align: center;
+	margin-left: 20px;
+	line-height: 30px;
+}
+.lises>ul>li:hover{
+	background: #000000;
+	color: #AB9274;
+}
+/* 足球服 */
+.foot{
+	width: 80%;
+	height: 82px;
+	margin: 30px 0 10px 0;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border-top: 1px solid #AB9274;
+	border-bottom: 1px solid #AB9274;
+}
+.foot>h3{
+	background: #AB9274;
+}
+.foot>p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+/* 尾页 */
+div.money{
+	background: #000000;
+}
+.money>.dog{
+	width: 80%;
+	height: 800px;
+	margin: 0 auto;
+	height: 496px;
+	padding-top: 82px;
+	position: relative;
+	background: #FCFCFC;
+}
+.dog>.pice{
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+	padding: 15px 0;
+	position: absolute;
+	bottom: -130px;
+	z-index: 10;
+}
+.pice>ul>li{
+	float: left;
+	margin-left: 45px;
+}
+.rose{
+	width: 100%;
+	height: 386px;
+	background: white;
+	position: absolute;
+	bottom: 0;
+	display: none;
+	/* z-index: 10; */
+}
+.rose>.nike{
+	width: 150px;
+	height: 250px;
+	margin-top: 30px;
+	margin-left: 50px;
+	float: left;
+}
+.rose>.nike>.action{
+	color: #222;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 2.5;
+}
+.rose>.nike>li{
+	vertical-align: inherit;
+	box-sizing: border-box;
+	color: #222;
+	font-size: .825em;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 2;
+	cursor:pointer;
+}
+.rose>.nike>li:hover{
+	color: #AB9274;
+}
+.puma{
+	width: 150px;
+	height: 250px;
+	margin-top: 30px;
+	margin-left: 100px;
+	float: left;
+}
+.puma>.action{
+	color: #222;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 2.5;
+}
+.puma>li{
+	vertical-align: inherit;
+	box-sizing: border-box;
+	color: #222;
+	font-size: .825em;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 2;
+	cursor:pointer;
+}
+.puma>li:hover{
+	color: #AB9274;c
+}
+/* 超足球 */
+.kappa{
+	width: 150px;
+	height: 250px;
+	margin-top: 30px;
+	margin-left: 100px;
+	float: left;
+}
+.kappa>.action{
+	color: #222;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 2.5;
+}
+.kappa>li{
+	vertical-align: inherit;
+	box-sizing: border-box;
+	color: #222;
+	font-size: .825em;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 2;
+	cursor:pointer;
+}
+.kappa>li:hover{
+	color: #AB9274;c
+}
+.tupian{
+	background: url(../img/9.png) no-repeat center center/100% 100%;
+	width: 70%;
+	height: 100px;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	left: 150px;
+	display: none;
+}
+.last{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	color: #AB9274;
+	display: none;
+}
+.last>img{
+	position: fixed;
+	right: 28px;
+	bottom: 45px;
+}
+.left{
+	width: 145px;
+	height: 200px;
+	position: fixed;
+	top: 180px;
+	left: 0px;
+}
+.left>img{
+	display: block;
+	width: 125px;
+	height: 200px;
+}
+.right{
+	width: 145px;
+	height: 200px;
+	position: fixed;
+	top: 180px;
+	right: -22px;
+}
+.right>img{
+	display: block;
+	width: 125px;
+	height: 200px;
+}

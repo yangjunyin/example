@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #000000;
+}
+.banner-a{
+	width: 100%;
+	height: 82px;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.banner-a>img{
+	display: block;
+	float: left;
+}
+.banner-a>ul{
+	width: 600px;
+	height: 82px;
+	float: left;
+	margin-left: 80px;
+}
+.banner-a>ul>li{
+	width: 90px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 82px;
+	margin-left: 10px;
+}
+.banner-a>ul>li>a{
+	color: #AB9274;
+	font-size: 18px;
+}
+.banner-a>ul>li>a:hover{
+	color: #FFFFFF;
+}
+input{
+	width: 152px;
+	height: 50px;
+	resize:none;
+	outline:0;
+	border:0px;
+	border-bottom: 1px solid white;
+	display: block;
+	margin-top: 15px;
+	float: left;
+	margin-left: 50px;
+}
+button{
+	width: 29px;
+	height: 51px;
+	float: left;
+	display: block;
+	outline:0;
+	border:0px;
+	display: block;
+	margin-top: 15px;
+	margin-left: -25px;
+	background: white;
+}
+button>img{
+	width: 28px;
+	float: left;
+}
+button>.xiala{
+	width: 156px;
+	height: 80px;
+	background: white;
+	position: fixed;
+	right: 183px;
+	top: 66px;
+	border-top: 3px solid lightblue;
+	display: none;
+	z-index: 10;
+}
+/* 我的 */
+#mine{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 40px;
+}
+#mine>a{
+	display: block;
+	width: 28px;
+	height: 28px;
+}
+#mine>a>img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 25px;
+}
+/* 购物车 */
+#shop{
+	width: 30px;
+	float: left;
+	margin-left: 40px;
+}
+#shop>img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 25px;
+}
+#shop>.shop{
+	width: 300px;
+	height: 400px;
+	background: white;
+	position: fixed;
+	right: 0px;
+	top: 82px;
+	border-top: 5px solid lightblue;
+	display: none;
+	z-index: 10;
+}
+.blank{
+	width: 100%;
+	height: 82px;
+}
+.puls{
+	width: 80%;
+	height: 2000px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,.5);
+}
+.puls>ul>li{
+	width: 40%;
+	height: 300px;
+	float: left;
+	margin-left: 68px;
+	margin-top: 80px;
+	position: relative;
+	overflow: hidden;
+}
+.puls>ul>li>img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.puls>ul>li>.left{
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.puls>ul>li>.right{
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
